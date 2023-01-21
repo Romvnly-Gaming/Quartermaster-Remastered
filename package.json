@@ -1,0 +1,39 @@
+{
+  "name": "quartermaster-remastered",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "build:changelog": "pnpm dlx copyfiles --root=src",
+    "dev": "ts-node-esm src/main.ts",
+    "start": "node build/main.js",
+    "watch": "nodemon --exec ts-node-esm src/main.ts"
+  },
+  "dependencies": {
+    "@discordx/importer": "^1.1.10",
+    "@discordx/pagination": "^3.3.1",
+    "canvas": "^2.11.0",
+    "discord.js": "^14.6.0",
+    "discordx": "^11.4.0",
+    "dotenv-defaults": "^5.0.2",
+    "noblox.js": "^4.13.1",
+    "string-similarity": "^4.0.4",
+    "tesseract.js": "^4.0.2",
+    "trello": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "@types/string-similarity": "^4.0.0",
+    "@types/tesseract.js": "^2.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
