@@ -3,7 +3,8 @@ import type { Interaction, Message } from "discord.js";
 import { IntentsBitField } from "discord.js";
 import { Client } from "discordx";
 
-require(`dotenv-defaults`).config({
+import * as config from "dotenv-defaults"
+config.config({
   path: './.env',
   encoding: 'utf8',
   defaults: './.example.env'
